@@ -38,6 +38,8 @@ if (-not (Test-Path $carpetaScript)) {
 
 # ---- Descargar el script de limpieza desde GitHub ----
 Write-Host "  Descargando script de limpieza desde GitHub..." -NoNewline
+# Forzar el uso de TLS 1.2 para la descarga
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 try {
     $urlScript = "https://raw.githubusercontent.com/Ale-debug-29/NAVAJA-SUIZA/main/LimpiezaSemanal.ps1"
     Invoke-WebRequest -Uri $urlScript -OutFile $rutaScript -UseBasicParsing -ErrorAction Stop
