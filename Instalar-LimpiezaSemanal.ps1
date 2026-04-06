@@ -41,7 +41,7 @@ Write-Host "  Descargando script de limpieza desde GitHub..." -NoNewline
 try {
 # Forzar el uso de TLS 1.2 para la descarga
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    $urlScript = "https://raw.githubusercontent.com/Ale-debug-29/NAVAJA-SUIZA/main/LimpiezaSemanal.ps1"
+    $urlScript = "https://raw.githubusercontent.com/Ale-debug-29/Limpieza-semanal/refs/heads/main/LimpiezaSemanal.ps1"
     Invoke-WebRequest -Uri $urlScript -OutFile $rutaScript -UseBasicParsing -ErrorAction Stop
     Unblock-File -Path $rutaScript -ErrorAction SilentlyContinue
     Write-Host " OK" -ForegroundColor Green
