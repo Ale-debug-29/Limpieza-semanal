@@ -76,9 +76,9 @@ try {
 
     $opciones  = New-ScheduledTaskSettingsSet `
                     -ExecutionTimeLimit (New-TimeSpan -Hours 1) `
-                    -RunOnlyIfNetworkAvailable $false `
+                    -RunOnlyIfNetworkAvailable:$false `
                     -StartWhenAvailable `
-                    -WakeToRun $false
+                    -WakeToRun:$false
 
     # Ejecutar como SYSTEM para tener permisos maximos sin necesitar usuario logueado
     $principal = New-ScheduledTaskPrincipal `
