@@ -4,7 +4,7 @@ SETLOCAL
 
 :: --- CONFIGURACIÓN ---
 :: Cambia estas URLs por las direcciones "Raw" de tus archivos en GitHub
-SET "URL_INSTALADOR=https://raw.githubusercontent.com/TU_USUARIO/NAVAJA-SUIZA/main/Instalar-LimpiezaSemanal.ps1"
+SET "URL_INSTALADOR=https://raw.githubusercontent.com/Ale-debug-29/Limpieza-semanal/refs/heads/main/Instalar-LimpiezaSemanal.ps1"
 SET "PATH_TEMPORAL=%TEMP%\Instalar-LimpiezaSemanal.ps1"
 
 :: --- COMPROBAR ADMINISTRADOR ---
